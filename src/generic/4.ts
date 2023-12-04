@@ -2,7 +2,7 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
-interface PageProps {
+interface ComponentProps {
   title: string
 }
 
@@ -12,7 +12,7 @@ constructor (public props: T) {
 }
 }
 
-class Page extends Component<PageProps> {
+class Page extends Component<ComponentProps> {
 pageInfo () {
   console.log(this.props.title);
 }
